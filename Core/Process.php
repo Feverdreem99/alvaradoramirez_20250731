@@ -5,8 +5,8 @@ $accepted_method = 'POST';
 $correct_user = "Admin";
 $correct_pass = "Admin";
 
-$txt_user = $_POST["txt_user"];
-$txt_pass = $_POST["txt_pass"];
+$txt_user = ( (isset($_POST["txt_user"])) ? $_POST["txt_user"] : null);
+$txt_pass = ( (isset($_POST["txt_pass"])) ? $_POST["txt_pass"]: null);
 
 $token = "";
 
